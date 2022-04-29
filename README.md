@@ -1,4 +1,4 @@
-# nfc-transfer-otp
+# nfc-otp-transfer
 
 ## Intended functionality
 P2P - Mobile to mobile NFC transfer of OTPs
