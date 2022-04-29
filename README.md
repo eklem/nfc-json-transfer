@@ -1,11 +1,11 @@
-# nfc-otp-transfer
+# nfc-json-transfer
 
 ## Intended functionality
-P2P - Mobile to mobile NFC transfer of OTPs
+P2P - Mobile to mobile NFC transfer of JSON data
 
-Transfer OTPs - One-time pads between phones. First version will use NFC tags since [P2P isn't supported in web-nfc yet](https://github.com/w3c/web-nfc/issues/529).
+Transfer JSON between phones, using NFC. First version will use NFC tags since [P2P isn't supported in web-nfc yet](https://github.com/w3c/web-nfc/issues/529).
 
-One phone should be set to send (and how many OTPs to send), the other recieve. Then transfer the tag back and forth. untill sucess.
+One phone should be set to send, the other recieve. Then transfer the tag back and forth. untill sucess.
 
 ## No dependency
 No dependencies, but should work together with [otp-encryption-decryption-lib](https://github.com/eklem/otp-encryption-decryption-lib) for generating the actual keys.
