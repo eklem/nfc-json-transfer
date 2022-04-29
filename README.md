@@ -19,4 +19,4 @@ Second basic library to create [otp-encryption-toy](https://github.com/eklem/otp
 * [ ] Check how much data the tag can take
 * [ ] Send some data. Which is to write as much as possible to the key-tag, and keep track of how much is left of data to send
 * [ ] Receive data, empty tag and possibly add `received: true` to tag. Keep track of how much is left to receive.
-* [ ] Show an OK at the end on both phones (all transfers OK, and no data registered left to transfer)
+* [ ] Show an OK at the end on both phones (all transfers OK, and no data registered left to transfer). This is what's needed before i.e. adding keys to indexedDB.
