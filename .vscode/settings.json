@@ -1,8 +1,0 @@
-{
-  "liveServer.settings.https": {
-    "enable": true,
-    "cert": "/Users/eklem/mkcert/localhost+3.pem",
-    "key": "/Users/eklem/mkcert/localhost+3-key.pem",
-    "passphrase": ""
-  }
-}

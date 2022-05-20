@@ -1,0 +1,31 @@
+{
+  "name": "nfc-json-transfer",
+  "version": "0.0.1",
+  "description": "P2P - Mobile to mobile NFC transfer of JSON data.",
+  "main": "./src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "batr": "^2.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eklem/nfc-json-transfer.git"
+  },
+  "keywords": [
+    "mobile-first",
+    "json",
+    "nfc",
+    "p2p"
+  ],
+  "author": "Espen Klem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eklem/nfc-json-transfer/issues"
+  },
+  "homepage": "https://github.com/eklem/nfc-json-transfer#readme"
+}
