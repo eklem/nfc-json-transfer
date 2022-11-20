@@ -1,4 +1,3 @@
-// Listen to key up on headlinetext and initiate a daq-proc
 document.getElementById('readButton').onclick = function () {
   popHTML('read-button clicked', { tagToPop: 'console', tagToPopWith: 'div', append: true })
 }
