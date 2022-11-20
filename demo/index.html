@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com/?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script src="./js/nfc-json-transfer.js"></script>
+    <!-- <script src="./js/nfc-json-transfer.js"></script> -->
+    <script src="./js/popHTML.js"></script>
     <script>
 
     </script>
@@ -19,10 +20,11 @@
           <h2 class="text-2xl font-light">Read from- and write to- an RFID card</h2>
           <!-- <textarea rows="3" id="querytext" class="rounded text-xl w-full border-none border-white focus:outline-none focus:outline-none focus:ring-slate-400"></textarea> -->
           
-          <button class="bg-slate-600 hover:bg-slate-800 text-white font-bold my-2 py-2 px-4 rounded">Read</button>
-          <button class="bg-slate-600 hover:bg-slate-800 text-white font-bold my-2 py-2 px-4 rounded">Write</button>
+          <button id="readButton" class="bg-slate-600 hover:bg-slate-800 text-white font-bold my-2 py-2 px-4 rounded">Read</button>
+          <button id="writeButton" class="bg-slate-600 hover:bg-slate-800 text-white font-bold my-2 py-2 px-4 rounded">Write</button>
         </div>
       </div>
-      <div id="console" class="h-96 font-mono bg-slate-800 text-yellow-100 border-2 border-slate-900 py-4 px-4 ">$ hello</div>
+      <div id="console" class="h-96 font-mono bg-slate-800 text-yellow-100 border-2 border-slate-900 py-4 px-4 overflow-y-auto overscroll-auto">$ hello console.log()</div>
+      <script src="./js/nfc-json-transfer-app.js"></script>
   </body>
 </html>
