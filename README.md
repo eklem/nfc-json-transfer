@@ -19,6 +19,10 @@ No dependencies. Should work together with [otp-encryption-decryption-lib](https
 * [ ] Receive data, empty tag and possibly add `received: true` to tag. Keep track of how much is left to receive.
 * [ ] Show an OK at the end on both phones (all transfers OK, and no data registered left to transfer). This is what's needed before i.e. adding keys to indexedDB.
 
+## Demo-to-be
+
+Only HTML/CSS for now - [Demo](https://eklem.github.io/nfc-json-transfer/demo/)
+
 ## Development setup
 
 ### Install VSCode plugins:
