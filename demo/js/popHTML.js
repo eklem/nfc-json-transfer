@@ -30,7 +30,7 @@ const emptyElement = function (elementToEmpty) {
 
 const scrollTo = function (nodeElement, scrollTo) {
   const tags = document.getElementsByClassName(nodeElement)
-  tag = tags[tags.length - 1]
+  const tag = tags[tags.length - 1]
   tag.scrollIntoView({behavior: 'smooth'})
   console.log('scrolling')
 }

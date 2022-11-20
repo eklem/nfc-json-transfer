@@ -1,6 +1,6 @@
 {
   "name": "nfc-json-transfer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "P2P - Mobile to mobile NFC transfer of JSON data.",
   "main": "./src/index.js",
   "directories": {
