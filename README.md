@@ -20,8 +20,9 @@ No dependencies. Should work together with [otp-encryption-decryption-lib](https
 * [ ] Show an OK at the end on both phones (all transfers OK, and no data registered left to transfer). This is what's needed before i.e. adding keys to indexedDB.
 
 ## Demo-to-be
+[eklem.github.io/nfc-json-transfer/demo/](https://eklem.github.io/nfc-json-transfer/demo/)
 
-Only HTML/CSS for now - [Demo](https://eklem.github.io/nfc-json-transfer/demo/)
+Some stuff slightly working. Will break every now and then.
 
 ## Development setup
 
