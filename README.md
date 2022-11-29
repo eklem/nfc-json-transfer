@@ -3,12 +3,12 @@
 ## Intended functionality
 P2P - Mobile to mobile NFC transfer of JSON data
 
-Transfer JSON between phones, using NFC. First version will use NFC tags since [P2P isn't supported in web-nfc yet](https://github.com/w3c/web-nfc/issues/529).
+Transfer any JSON between phones, using NFC Web API. First version will use NFC tags since [P2P isn't supported in web-nfc yet](https://github.com/w3c/web-nfc/issues/529).
 
-One phone should be set to send, the other recieve. Then transfer the tag back and forth. untill sucess.
+One phone should be set to send/write, the other recieve/read. Then transfer the tag back and forth. until all data is transferred.
 
 ## No dependency
-No dependencies. Should work together with [otp-encryption-decryption-lib](https://github.com/eklem/otp-encryption-decryption-lib) for generating the actual JSON to be trnasferred, but `nfc-json-transfer` is created to transport any JSON objects/arrays.
+No dependencies. Should work together with [otp-encryption-decryption-lib](https://github.com/eklem/otp-encryption-decryption-lib) for generating the actual JSON to be transferred, but `nfc-json-transfer` is created to transport any JSON objects/arrays.
 
 ## Possible features
 * [ ] Set phone in send mode
