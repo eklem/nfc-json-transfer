@@ -20,12 +20,12 @@ readButton.addEventListener("click", async () => {
     ndef.addEventListener("reading", ({ message, serialNumber }) => {
       console.log(`> Serial Number: ${serialNumber}`)
       console.log(`> Records: (${message.records.length})`)
-      const msg = 'Read<br/>Serial number: ' + serialNumber + '<br>Records: ' + message.records.length + '<br>message: ' + message
+      const msg = 'read<br/>Serial number: ' + serialNumber + '<br>Records: ' + message.records.length + '<br>message: ' + message
       popHTML(msg, { tagToPop: 'console', tagToPopWith: 'div', append: true })
     })
   } catch (error) {
     console.log('Error reading: ' + error)
-    const msg = 'Read<br/>Error reading: ' + error
+    const msg = 'read<br/>Error reading: ' + error
     popHTML(msg, { tagToPop: 'console', tagToPopWith: 'div', append: true })
   }
 })
@@ -36,10 +36,10 @@ writeButton.addEventListener("click", async () => {
     const ndef = new NDEFReader()
     await ndef.write('Hello world!')
     console.log('> Message written')
-    popHTML('write-button clicked', { tagToPop: 'console', tagToPopWith: 'div', append: true })
+    popHTML('write', { tagToPop: 'console', tagToPopWith: 'div', append: true })
   } catch (error) {
     console.log('Error writing ' + error)
-    const msg = 'Write<br/>Error writing:  ' + error
+    const msg = 'write<br/>Error writing:  ' + error
     popHTML(msg, { tagToPop: 'console', tagToPopWith: 'div', append: true })
   }
 })
