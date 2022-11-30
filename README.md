@@ -14,8 +14,13 @@ No dependencies. Should work together with [otp-encryption-decryption-lib](https
 * [ ] Set phone in send mode
 * [ ] Set phone in receive mode
 * [ ] Clear tag
-* [ ] Check how much data the tag can take
-* [ ] Send some data. Which is to write as much as possible to the key-tag, and keep track of how much is left of data to send
+~~* [ ] Check how much data the tag can take~~
+* [ ] write data to tag
+* [ ] slice data in two if not possible to store on tag (repeat until successs)
+* [ ] keep track of how much data is written -> create some meta-data for number of elements in array left (for both writing and reading side to be happy)
+* [ ] Finished transferring true/false
+* [ ] join data in receiving end when all array elements read 
+~~* [ ] Send some data. Which is to write as much as possible to the key-tag, and keep track of how much is left of data to send~~
 * [ ] Receive data, empty tag and possibly add `received: true` to tag. Keep track of how much is left to receive.
 * [ ] Show an OK at the end on both phones (all transfers OK, and no data registered left to transfer). This is what's needed before i.e. adding keys to indexedDB.
 
