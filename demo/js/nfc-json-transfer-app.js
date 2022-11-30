@@ -13,13 +13,21 @@ readButton.addEventListener("click", async () => {
     await ndef.scan();
     ndef.onreading = (event) => {
       const decoder = new TextDecoder()
+      const records = event.message.records
+      const msgDecoder = 'Read</br>TextDecoder created'
+      popHTML(msgDecoder, { tagToPop: 'console', tagToPopWith: 'div', append: true })
       for (const record of event.message.records) {
+        const soFar = 'Got inside the for-loop'
+        popHTML(soFar, { tagToPop: 'console', tagToPopWith: 'div', append: true })
         if (record.mediaType === "application/json") {
-          const json = JSON.parse(decoder.decode(record.data))
-          const article =/^[aeio]/i.test(json.title) ? "an" : "a"
-          console.log(`${json.name} is ${article} ${json.title}`)
-          const msg = 'read<br/>' + json.name + ' is ' + article + ' ' + json.title
+          const isJson = 'record is JSON data'
+          popHTML(isJson, { tagToPop: 'console', tagToPopWith: 'div', append: true })
+          const json = decoder.decode(record.data)
+          const msg = 'Read</br>' + json
           popHTML(msg, { tagToPop: 'console', tagToPopWith: 'div', append: true })
+        } else {
+          const notJson = 'Read</br>Message not JSON.'
+          popHTML(notJson, { tagToPop: 'console', tagToPopWith: 'div', append: true })
         }
       }
     }
@@ -33,23 +41,23 @@ readButton.addEventListener("click", async () => {
 writeButton.addEventListener("click", async () => {
   try {
     const encoder = new TextEncoder();
+    const data = [
+      {
+        name: "Benny Jensen",
+        title: "Banker"
+      },
+      {
+        name: "Zoey Braun",
+        title: "Engineer"
+      }
+    ]
+    const dataString = JSON.stringify(data)
     await ndef.write({
       records: [
         {
           recordType: "mime",
           mediaType: "application/json",
-          data: encoder.encode(JSON.stringify({
-            name: "Benny Jensen",
-            title: "Banker"
-          }))
-        },
-        {
-          recordType: "mime",
-          mediaType: "application/json",
-          data: encoder.encode(JSON.stringify({
-            name: "Zoey Braun",
-            title: "Engineer"
-          }))
+          data: encoder.encode(dataString)
         }
       ]
     })
