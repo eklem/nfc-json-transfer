@@ -14,7 +14,7 @@ No dependencies. Should work together with [otp-encryption-decryption-lib](https
 * [ ] Set phone in send mode
 * [ ] Set phone in receive mode
 * [ ] Clear tag
-* [ ] write data to tag
+* [ ] write data to tag
 * [ ] slice data in two if not possible to store on tag (repeat until successs)
 * [ ] keep track of how much data is written -> create some meta-data for number of elements in array left (for both writing and reading side to be happy)
 * [ ] Finished transferring true/false
